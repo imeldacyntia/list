@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+
+    <!-- Google Font: Quick Sand -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome (https://fontawesome.com) for basic icons; source: https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Imelda Cyntia - To Do List</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-body">
+                <div id="header">
+                    <div class="flexrow-container">
+                        <div class="standard-theme theme-selector"></div>
+                        <div class="darker-theme theme-selector"></div>
+                    </div>
+                    <h2 id="title">TO-do List Me In April<div id="border"></div></h2>
+                </div>
+
+                <div id="form">
+                    <form>
+                        <input class="todo-input" type="text" placeholder="">
+                        <button class="todo-btn" type="submit">Add Task!</button>
+                    </form>
+                </div>
+
+                <div>
+                    <p><span id="datetime"></span></p>
+                    <script src="JS/time.js"></script>
+                </div>
+
+                <div id="myUnOrdList">
+                    <ul class="todo-list">
+                        <!-- (Basic Format)
+                        <div class="todo">
+                            items added to this list:
+                            <li></li>
+                            <button>delete</button>
+                            <button>check</button>
+                        </div> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
